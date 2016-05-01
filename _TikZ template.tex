@@ -1,0 +1,37 @@
+\documentclass{report}
+% for dvips color names such as JungleGreen
+% MUST come before \usepackage{tikz}
+\usepackage[usenames, dvipsnames]{color}
+% for \begin{lstlisting}
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.pathreplacing}
+% For <>| See "Special Characters.rtfd"
+\usepackage[T1]{fontenc}% For being able to name paths and finding their intersection. For example: "\path [name path=upward line]".
+\usetikzlibrary{intersections}
+
+
+\begin{document}
+
+
+\section*{}
+\vspace{30pt}
+
+
+\section*{Grid}
+
+\begin{tikzpicture}
+\draw[help lines] (0,0) grid (5,5);
+\end{tikzpicture}
+
+{\color{RubineRed} \rule{\linewidth}{0.5mm} }
+ 
+The background colour of some text can also be \textcolor{red}{easily} set. For 
+instance, you can change to orange the background of \colorbox{BurntOrange}{this 
+text} and then continue typing.
+
+
+\end{document}
+
