@@ -1,0 +1,41 @@
+\documentclass{report}
+% for dvips color names such as JungleGreen
+% MUST come before \usepackage{tikz}
+\usepackage[usenames, dvipsnames]{color}
+% for \begin{lstlisting}
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.pathreplacing}
+% For <>| See "Special Characters.rtfd"
+\usepackage[T1]{fontenc}% For being able to name paths and finding their intersection. For example: "\path [name path=upward line]".
+\usetikzlibrary{intersections}
+
+\begin{document}
+
+
+\section*{\textcolor{ProcessBlue}{Particle Interactions and Conservation Laws}}
+
+The following are always conserved
+- mass
+- momentum
+- charge
+- baryon number
+- lepton number (for each type of lepton -- see note below)
+
+Strangeness is a little complicated.
+- It is conserved in the strong interactions.
+- It is conserved in the weak interaction.
+- In the weak interaction it may remain the same (i.e. be conserved) or change by +1 or -1.
+
+Note on conservation of lepton number:
+Each type of lepton number is conserved. So, for example the total electron lepton number on the left must equal the total electron lepton number on the right. Similarly, total muon lepton number on the left must equal the total muon lepton number on the right.
+
+Assigning baryon numbers
+Each quark has a baryon number of 
+
+{\color{RubineRed} \rule{\linewidth}{0.5mm} }
+ 
+\end{document}
+
